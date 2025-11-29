@@ -1,0 +1,35 @@
+{
+  "$schema": "https://turborepo.com/microfrontends/schema.json",
+  "options": {
+    "localProxyPort": 3024
+  },
+  "applications": {
+    "clue": {
+      "packageName": "clue",
+      "development": {
+        "local": {
+          "port": 5173
+        }
+      }
+    },
+    "order": {
+      "packageName": "order",
+      "development": {
+        "local": {
+          "port": 5174
+        }
+      },
+      "routing": [
+        {
+          "group": "order",
+          "paths": [
+            "/order",
+            "/order/:path*",
+            "/api-reference",
+            "/api-reference/:path*"
+          ]
+        }
+      ]
+    }
+  }
+}
