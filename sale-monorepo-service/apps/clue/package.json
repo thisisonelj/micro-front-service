@@ -11,6 +11,7 @@
     "build": "run-p type-check \"build-only {@}\" --"
   },
   "dependencies": {
+    "eslint-define-config": "^2.1.0",
     "pinia": "^3.0.4",
     "vue": "^3.5.25",
     "vue-router": "^4.6.3"

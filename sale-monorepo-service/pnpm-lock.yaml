@@ -20,6 +20,9 @@ importers:
 
   apps/clue:
     dependencies:
+      eslint-define-config:
+        specifier: ^2.1.0
+        version: 2.1.0
       pinia:
         specifier: ^3.0.4
         version: 3.0.4(typescript@5.9.2)(vue@3.5.25(typescript@5.9.2))
@@ -1635,6 +1638,11 @@ packages:
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
+
+  eslint-define-config@2.1.0:
+    resolution: {integrity: sha512-QUp6pM9pjKEVannNAbSJNeRuYwW3LshejfyBBpjeMGaJjaDUpVps4C6KVR8R7dWZnD3i0synmrE36znjTkJvdQ==}
+    engines: {node: '>=18.0.0', npm: '>=9.0.0', pnpm: '>=8.6.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   eslint-plugin-cypress@5.2.0:
     resolution: {integrity: sha512-vuCUBQloUSILxtJrUWV39vNIQPlbg0L7cTunEAzvaUzv9LFZZym+KFLH18n9j2cZuFPdlxOqTubCvg5se0DyGw==}
@@ -4919,6 +4927,8 @@ snapshots:
   eslint-config-prettier@10.1.1(eslint@9.39.1(jiti@2.6.1)):
     dependencies:
       eslint: 9.39.1(jiti@2.6.1)
+
+  eslint-define-config@2.1.0: {}
 
   eslint-plugin-cypress@5.2.0(eslint@9.39.1(jiti@2.6.1)):
     dependencies:
