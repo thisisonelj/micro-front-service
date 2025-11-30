@@ -2,14 +2,25 @@
   "$schema": "https://turborepo.com/schema.json",
   "globalEnv": [".env"],
   "tasks": {
-    "clue#dev": {
+    "components#dev": {
       "dependsOn": [],
       "cache": false,
       "persistent": true,
       "env": [".env.dev", ".env"]
     },
-    "clue#build": {
+    "components#build": {
       "dependsOn": [],
+      "outputs": ["dist/**"],
+      "env": [".env.prod", ".env"]
+    },
+    "clue#dev": {
+      "dependsOn": ["@lj/components#build"],
+      "cache": false,
+      "persistent": true,
+      "env": [".env.dev", ".env"]
+    },
+    "clue#build": {
+      "dependsOn": ["@lj/components#build"],
       "outputs": ["dist/**"],
       "env": [".env.prod", ".env"]
     },
