@@ -20,9 +20,13 @@ export default defineConfig({
   },
    build: {
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, './src/main.ts'),
-      },
+        external: ['element-plus', 'vue']
     },
+     lib: {
+        entry: resolve(__dirname, './src/main.ts'),
+        name: 'ljComponents',
+        fileName: 'lj-components',
+        formats: ['es', 'cjs', 'umd',]
+      }
   },
 })
