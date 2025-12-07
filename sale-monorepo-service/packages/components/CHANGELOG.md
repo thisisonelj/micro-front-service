@@ -1,5 +1,11 @@
 # @lj/components
 
+## 8.0.0
+
+### Major Changes
+
+- 包权限开源 public
+
 ## 7.0.0
 
 ### Major Changes
