@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "allowSyntheticDefaultImports": true,
@@ -17,8 +17,8 @@
     "noUnusedParameters": true,
     "experimentalDecorators": true,
     "lib": ["dom", "esnext"],
-    "types": [],
-    "typeRoots": ["./node_modules/@types/", "./types", "./node_modules", "./src/typings.d.ts"],
+    "types": ["node"],
+    "typeRoots": ["./node_modules/@types/", "./types", "./node_modules", "./src/typings.d.ts",],
     "noImplicitAny": false,
     "skipLibCheck": true,
     "paths": {
@@ -28,6 +28,6 @@
       "#/*": ["types/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "vite.config.ts"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "vite.config.ts","./release.ts"],
   "exclude": ["node_modules", "dist", "**/*.js"]
 }
