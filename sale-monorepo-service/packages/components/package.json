@@ -1,6 +1,6 @@
 {
   "name": "@lj/components",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -35,5 +35,9 @@
     "vite": "^7.2.4",
     "vite-plugin-vue-devtools": "^8.0.5",
     "vue-tsc": "^3.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thisisonelj/micro-front-service.git"
   }
 }
