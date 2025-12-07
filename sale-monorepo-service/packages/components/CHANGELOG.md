@@ -1,5 +1,11 @@
 # @lj/components
 
+## 7.0.0
+
+### Major Changes
+
+- private改为false
+
 ## 6.0.0
 
 ### Major Changes

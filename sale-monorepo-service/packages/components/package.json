@@ -1,7 +1,7 @@
 {
   "name": "@lj/components",
-  "version": "6.0.0",
-  "private": true,
+  "version": "7.0.0",
+  "private": false,
   "type": "module",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
