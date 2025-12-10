@@ -1,0 +1,14 @@
+{
+  "app": "test",
+  "subArr": [
+    {
+      "surname": "liu",
+      "realName": "lj"
+    },
+    {
+      "surname": "liu1",
+      "realName": "lj1"
+    }
+  ],
+  "exit": "normal"
+}
